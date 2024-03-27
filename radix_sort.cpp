@@ -4,19 +4,6 @@
 
 using namespace std;
 
-bool verifSort(vector<int> nums)
-{
-    int len = nums.size();
-    for(int i = 0; i < len - 1; ++i)
-    {
-        if(nums[i] > nums[i+1])
-        {
-            return false;
-        }
-    }
-    return true;
-}
-
 int getMax(vector<int> nums)
 {
     int max = INT32_MIN;
